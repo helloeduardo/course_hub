@@ -1,0 +1,10 @@
+<h1>Welcome to Course Hub</h1>
+
+<p>Log in to view courses and register for classes.</p>
+
+<%= form_tag '/login' do %>
+  <%= label_tag :email %>
+  <%= email_field_tag :email, nil, placeholder: 'Email' %>
+
+  <%= submit_tag "Login" %>
+<% end %>
