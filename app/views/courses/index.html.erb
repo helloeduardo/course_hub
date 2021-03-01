@@ -3,8 +3,9 @@
 <ul class="courses">
   <% @courses.each do |course| %>
     <li>
-      Name: <%= course.name %>
-      Time: <%= course.time %>
+      <p>Name: <%= course.name %></p>
+      <p>Time: <%= course.time %></p>
+      <p><%= button_to "Register", course_registrations_path(course) %></p>
     </li>
   <% end %>
 </ul>
