@@ -1,7 +1,7 @@
 describe "Welcome Page" do
   describe "As a visitor" do
     it "I can log in" do
-      user = User.create!(email: 'user@example.com', name: 'User')
+      user = create(:user)
 
       visit "/"
 
