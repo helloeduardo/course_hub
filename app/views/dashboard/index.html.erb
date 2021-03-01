@@ -6,11 +6,11 @@
 <h2>My Registered Courses</h1>
 
 <ul class="courses">
-  <% @user.courses.each do |course| %>
+  <% @user.registrations.each do |registration| %>
     <li>
-      <p>Name: <%= course.name %></p>
-      <p>Time: <%= course.time %></p>
-      <!-- <p><%= button_to "Register", course_registrations_path(course) %></p> -->
+      <p>Name: <%= registration.course.name %></p>
+      <p>Time: <%= registration.course.time %></p>
+      <%= button_to "Cancel Registration", registration_path(registration), method: :delete %>
     </li>
   <% end %>
 </ul>

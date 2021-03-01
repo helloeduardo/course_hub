@@ -7,6 +7,12 @@ class RegistrationsController < ApplicationController
     redirect_to '/dashboard'
   end
 
+  def destroy
+    Registration.destroy(params[:id])
+    flash[:notice] = "Your registration has been cancelled."
+    redirect_to '/dashboard'
+  end
+
   private
 
   def registration_params
