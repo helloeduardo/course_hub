@@ -1,24 +1,57 @@
-# README
+# Course Hub
+  <p align="center">
+    Course Hub is a course management platform for students. Students are able to log in and view available resources, register for courses, view their course registrations, and cancel their registrations.
+  </p>
+</p>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-* Ruby version
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+  * [Schema](#schema)
+* [Usage](#usage)
 
-* System dependencies
 
-* Configuration
+<!-- GETTING STARTED -->
+## Getting Started
 
-* Database creation
+To use CourseHub locally, you can clone this repo.
 
-* Database initialization
+### Prerequisites
+* [Ruby 2.5.3](https://github.com/ruby/ruby)
+* [Rails 5.2.4.4](https://github.com/rails/rails)
 
-* How to run the test suite
+### Installation
+Below are the commands you will need to run in your terminal once you are inside the course_hub directory.
 
-* Services (job queues, cache servers, search engines, etc.)
+* Bundle Install
+```
+$ bundle exec install
+```
+* Set up Database
+```
+$ rails db:create
+$ rails db:migrate
+$ rails db:seed
+```
 
-* Deployment instructions
+### Schema
 
-* ...
+After running your migrations, your schema will look something like this!
+<br />
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/56360157/109468618-171e2a00-7a2a-11eb-9200-0bdcc0ef4107.png">
+</p>
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+Run ```rails s``` in your terminal and visit ```http://localhost:3000/``` in your browser
+
+A default user will be seeded to the database. You may log in as that user using the email `user@example.com`.
+
+Once you are logged in you are redirected to your dashboard, where you may view your course registrations or view available courses. 
