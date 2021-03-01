@@ -1,1 +1,16 @@
-<%= link_to "View available courses", courses_path %>
+<h1>Dashboard for <%= @user.name %></h1>
+
+<p><%= link_to "View available courses", courses_path %></p>
+
+
+<h2>My Registered Courses</h1>
+
+<ul class="courses">
+  <% @user.courses.each do |course| %>
+    <li>
+      <p>Name: <%= course.name %></p>
+      <p>Time: <%= course.time %></p>
+      <!-- <p><%= button_to "Register", course_registrations_path(course) %></p> -->
+    </li>
+  <% end %>
+</ul>
