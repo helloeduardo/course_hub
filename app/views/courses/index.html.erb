@@ -1,0 +1,10 @@
+<h1>All Courses</h1>
+
+<ul class="courses">
+  <% @courses.each do |course| %>
+    <li>
+      Name: <%= course.name %>
+      Time: <%= course.time %>
+    </li>
+  <% end %>
+</ul>
