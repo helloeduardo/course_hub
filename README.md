@@ -1,6 +1,6 @@
 # Course Hub
   <p align="center">
-    Course Hub is a course management platform for students. Students are able to log in and view available resources, register for courses, view their course registrations, and cancel their registrations.
+    Course Hub is a course management platform for students. Students are able to log in and view available courses, register for courses, view their course registrations, and cancel their registrations.
   </p>
 </p>
 
@@ -13,6 +13,7 @@
   * [Installation](#installation)
   * [Schema](#schema)
 * [Usage](#usage)
+* [Testing](#testing)
 
 
 <!-- GETTING STARTED -->
@@ -54,4 +55,17 @@ Run ```rails s``` in your terminal and visit ```http://localhost:3000/``` in you
 
 A default user will be seeded to the database. You may log in as that user using the email `user@example.com`.
 
-Once you are logged in you are redirected to your dashboard, where you may view your course registrations or view available courses. 
+Once you are logged in you are redirected to your dashboard, where you may view your course registrations or view available courses.
+
+<!-- USAGE EXAMPLES -->
+## Testing
+Below is the command you will need to run in your terminal once you are inside the course_hub directory to run tests built with RSpec.
+
+```
+$ bundle exec rspec
+```
+
+After running the tests, you may view the test coverage file with the following command:
+```
+$ open coverage/index.html
+```
