@@ -4,4 +4,6 @@ Rails.application.routes.draw do
 
   post '/login', to: 'sessions#create'
   get '/dashboard', to: 'dashboard#index'
+
+  resources :courses, only: [:index]
 end
